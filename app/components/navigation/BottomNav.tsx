@@ -16,12 +16,12 @@ export function BottomNav() {
   const pathname = usePathname();
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 p-4">
+    <div className="fixed bottom-0 left-0 right-0 z-40 p-4">
       <motion.nav 
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         className={cn(
-          "relative mx-auto max-w-fit rounded-2xl border",
+          "relative mx-auto max-w-lg rounded-2xl border",
           "bg-background/60 backdrop-blur-xl",
           "shadow-lg shadow-black/5",
           "px-4 py-2"

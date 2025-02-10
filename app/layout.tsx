@@ -5,6 +5,7 @@ import { ThemeProvider } from "./context/ThemeProvider";
 import { themeScript } from './lib/theme-script';
 import { BottomNav } from "./components/navigation/BottomNav";
 import { PageTransitionWrapper } from "./components/PageTransitionWrapper";
+import { MusicPlayer } from "./components/music/MusicPlayer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -46,6 +47,7 @@ export default function RootLayout({
               {children}
             </main>
             <BottomNav />
+            <MusicPlayer />
           </PageTransitionWrapper>
         </ThemeProvider>
       </body>
