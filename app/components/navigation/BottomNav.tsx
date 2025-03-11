@@ -3,12 +3,13 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { HomeIcon, BriefcaseIcon, MailIcon } from "lucide-react";
+import { HomeIcon, BriefcaseIcon, MailIcon, MessageSquareIcon } from "lucide-react";
 import { cn } from "@/app/lib/utils";
 
 const navItems = [
   { path: "/", label: "Home", icon: HomeIcon },
   { path: "/work", label: "Work", icon: BriefcaseIcon },
+  { path: "/chat", label: "Chat", icon: MessageSquareIcon },
   { path: "/contact", label: "Contact", icon: MailIcon },
 ] as const;
 
